@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design-Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="PatFinder the patent predator" />
+    <meta name="author" content="BehicMV" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .code-container {
+            background-color: black;
+            color: white;
+            font-family: Consolas, 'Courier New', Courier, monospace;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <section id="hero">
+        <header>
+            <div class="nav-toggle">
+                <p>Menu</p><span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#full-slide">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="wrapper">
+            <div class="welcome">
+                <h1><strong>Birinci</strong> Başlık Şemalisi</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+            </div>
+            <div class="photographer">
+                <img src="assets/img/hero.png" alt="Photographer" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <div class="camera">
+                <img src="assets/img/camera.png" alt="Camera" />
+            </div>
+            <div class="blurb">
+                <h2>Arama <strong>Motoru gibisinden</strong></h2>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...</p>
+            </div>
+        </div>
+    </section>
+    <section id="full-slide">
+        <ul class="banner">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <i class="icon-chevron-thin-left prev"></i>
+        <i class="icon-chevron-thin-right next"></i>
+    </section>
+    <section id="contact">
+        <!-- YouTube Video Bölümü Başlangıç -->
+        <div class="video-container">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/7mJhoqZRsSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- YouTube Video Bölümü Bitiş -->
+    </section>
+    <section id="code-section">
+        <!-- Kod Bölümü Başlangıç -->
+        <div class="code-container">
+            <pre><code>
+              // Design-Project Kodları
+            import java.util.Scanner;
+            class Stack {
+                private int maxSize;
+                private long[] stackArray;
+                private int top;
+                public Stack(int s) {
+                    maxSize = s;
+                    stackArray = new long[maxSize];
+                    top = -1;
+                }
+                public void push(long j) {
+                    stackArray[++top] = j;
+                }
+                public long pop() {
+                    return stackArray[top--];
+                }
+                public long peek() {
+                    return stackArray[top];
+                }
+                public boolean isEmpty() {
+                    return (top == -1);
+                }
+                public boolean isFull() {
+                    return (top == maxSize - 1);
+                }
+            }
+            class StackApp {
+                public static void main(String[] args) {
+                    Stack theStack = new Stack(10);
+                    theStack.push(20);
+                    theStack.push(40);
+                    theStack.push(60);
+                    theStack.push(80);
+                    while (!theStack.isEmpty()) {
+                        long value = theStack.pop();
+                        System.out.print(value);
+                        System.out.print(" ");
+                    }
+                    System.out.println("");
+                }
+            }
+            // Design-Project Kodları
+
+</stdio.h>
+            </code></pre>
+        </div>
+        <!-- Kod Bölümü Bitiş -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>');</script>
+    <script src="assets/js/functions-min.js"></script>
+</body>
+</html>
