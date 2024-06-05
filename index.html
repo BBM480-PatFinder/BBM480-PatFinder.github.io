@@ -25,33 +25,56 @@
 <body>
     <section id="title">
         <div class="wrapper">
-            <div class="welcome">
+            <div class="welcome" style="text-align: center">
                 <h1><strong>Artificial Intelligence Based Patent Search System</strong></h1>
             </div>
         </div>
     </section>
-    <section id="hero">
-        <div class="wrapper">
-            <div class="welcome">
-                <div class="column-left">
-                    <div class="column-left">
+<!--    <section id="hero">-->
+<!--        <div class="wrapper">-->
+<!--            <div class="welcome">-->
+<!--                <div class="column-left">-->
+<!--                    <div class="column-left">-->
+<!--                        <p><strong>Dataset:</strong> This is the starting point of the process and likely refers to a collection of patent documents that need to be searched. The dataset is represented as a 'Document'.</p>-->
+<!--                        <p><strong>Translate API:</strong> The patent documents in the dataset are passed through a translation API. This step suggests that the documents may be in different languages, and the API standardizes them into a single language to simplify processing.</p>-->
+<!--                        <p><strong>Sentence Transformer:</strong> The translated documents are processed by a sentence transformer. This machine learning model is designed to convert sentences into vector representations.</p>-->
+<!--                        <p><strong>Vectorized Content:</strong> The output from the sentence transformer is a vectorized representation of each document in the dataset. These vectors are ready for comparison and search operations.</p>-->
+<!--                        <p><strong>Query:</strong> This is the input from a user who is searching for specific information within the patent dataset. The query is represented as 'Data (I/O)'.</p>-->
+<!--                    </div>-->
+<!--                    <div class="column-right">-->
+<!--                        <p><strong>Sentence Transformer (again):</strong> The user's query is also processed by the same sentence transformer used for the dataset. This ensures that the query is converted into a vector form that is compatible with the vectorized content of the dataset.</p>-->
+<!--                        <p><strong>Vectorized Query:</strong> The transformed query becomes a vectorized form, which can now be compared directly against the vectorized content of the dataset.</p>-->
+<!--                        <p><strong>Elasticsearch:</strong> This is a search engine that facilitates the searching of documents. It likely uses the vectorized query to search through the vectorized content.</p>-->
+<!--                        <p><strong>KNN with Cosine Similarity:</strong> This step indicates the use of a k-nearest neighbors (KNN) algorithm combined with cosine similarity to find the most relevant patent documents.</p>-->
+<!--                        <p><strong>Related Results:</strong> The final output of the process is the related results that are returned to the user based on the query. These results are likely ranked by their relevance to the query, determined by the cosine similarity scores.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+	<section id="flowchart_explanation">
+		<div class="wrapper">
+			<div class="explanation">
+				<div class="explanation_wrapper">
+					<div class="left-column">
                         <p><strong>Dataset:</strong> This is the starting point of the process and likely refers to a collection of patent documents that need to be searched. The dataset is represented as a 'Document'.</p>
                         <p><strong>Translate API:</strong> The patent documents in the dataset are passed through a translation API. This step suggests that the documents may be in different languages, and the API standardizes them into a single language to simplify processing.</p>
                         <p><strong>Sentence Transformer:</strong> The translated documents are processed by a sentence transformer. This machine learning model is designed to convert sentences into vector representations.</p>
                         <p><strong>Vectorized Content:</strong> The output from the sentence transformer is a vectorized representation of each document in the dataset. These vectors are ready for comparison and search operations.</p>
                         <p><strong>Query:</strong> This is the input from a user who is searching for specific information within the patent dataset. The query is represented as 'Data (I/O)'.</p>
                     </div>
-                    <div class="column-right">
+                    <div class="right-column">
                         <p><strong>Sentence Transformer (again):</strong> The user's query is also processed by the same sentence transformer used for the dataset. This ensures that the query is converted into a vector form that is compatible with the vectorized content of the dataset.</p>
                         <p><strong>Vectorized Query:</strong> The transformed query becomes a vectorized form, which can now be compared directly against the vectorized content of the dataset.</p>
                         <p><strong>Elasticsearch:</strong> This is a search engine that facilitates the searching of documents. It likely uses the vectorized query to search through the vectorized content.</p>
                         <p><strong>KNN with Cosine Similarity:</strong> This step indicates the use of a k-nearest neighbors (KNN) algorithm combined with cosine similarity to find the most relevant patent documents.</p>
                         <p><strong>Related Results:</strong> The final output of the process is the related results that are returned to the user based on the query. These results are likely ranked by their relevance to the query, determined by the cosine similarity scores.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				</div>
+			</div>
+		</div>
+	</section>
     
     <section id="about">
         <div class="wrapper full-image">

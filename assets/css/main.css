@@ -435,11 +435,40 @@ svg path {
 .nav li a:hover {
   background-color: #dbdbdb;
 }
+
+#flowchart_explanation {
+  position: relative;
+  /*width: 1440px;*/
+  max-width: 80%;
+  /*height: 600px;*/
+  margin: 30px auto;
+  background-color: #efefef;
+  display: flex;
+}
+#flowchart_explanation .explanation_wrapper{
+  /*wrapper for two columns*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*width: 90%;*/
+
+}
+#flowchart_explanation .left-column {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+#flowchart_explanation .right-column {
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
 #hero {
   position: relative;
   width: 1440px;
   max-width: 95%;
-  height: 600px;
+  /*height: 600px;*/
   margin: 30px auto;
   background-color: #efefef;
   overflow: hidden;
@@ -604,9 +633,9 @@ svg path {
 }
 #about {
   position: relative;
-  width: 1440px;
-  max-width: 95%;
-  height: 600px;
+  /*width: 1440px;*/
+  max-width: 80%;
+  /*height: 600px;*/
   margin: 30px auto;
   background-color: #efefef;
   overflow: hidden;
@@ -733,12 +762,12 @@ svg path {
 }
 #full-slide {
   position: relative;
-  width: 1440px;
-  max-width: 95%;
-  height: 600px;
-  margin: 30px auto;
+  /*width: 1440px;*/
+  max-width: 80%;
+  height: 85vh;
+  margin: auto auto;
   background-color: #efefef;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 @media (max-width: 768px) {
   #full-slide {
