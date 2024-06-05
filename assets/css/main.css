@@ -1212,3 +1212,26 @@ svg path {
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 12px;
 }
+.column-left  {
+  float: left;
+  width: 90%;  /* Genişliği artırıldı */
+  box-sizing: border-box;
+  text-align: justify;
+
+}
+
+/* Sağ sütunu orantılı olarak azaltmak gerekirse */
+.column-right {
+  width: 100%;  /* Genişliği azaltıldı */
+  text-align: justify;
+  /*sağa doğru kaydır*/
+  margin-left: 120%;
+}
+
+@media (max-width: 800px) {
+  .column-left, .column-right {
+      float: none;
+      width: 100%;
+  }
+}
+
