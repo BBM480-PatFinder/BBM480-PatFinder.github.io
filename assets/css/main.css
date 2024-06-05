@@ -764,7 +764,7 @@ svg path {
   position: relative;
   /*width: 1440px;*/
   max-width: 80%;
-  height: 85vh;
+  height: 50vh;
   margin: auto auto;
   background-color: #efefef;
   /*overflow: hidden;*/
@@ -789,7 +789,7 @@ svg path {
   right: 0;
   bottom: 0;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-in-out;
@@ -1083,9 +1083,9 @@ svg path {
 }
 #contact {
   position: relative;
-  width: 1440px;
-  max-width: 95%;
-  height: 500px;
+  /*width: 1440px;*/
+  max-width: 80%;
+  /*height: 50vh;*/
   margin: 30px auto;
   background-color: #efefef;
   overflow: hidden;
@@ -1101,7 +1101,7 @@ svg path {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 1180px;
+  /*width: 1180px;*/
   max-width: 95%;
   height: 100%;
   margin: 0 auto;
