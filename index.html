@@ -25,8 +25,16 @@
 <body>
     <section id="title">
         <div class="wrapper">
-            <div class="welcome" style="text-align: center">
-                <h1><strong>Artificial Intelligence Based Patent Search System</strong></h1>
+            <div class="welcome" style="text-align: center; font-family: Consolas,serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                <h2><strong>Artificial Intelligence Based Patent Search System</strong></h2>
+            </div>
+        </div>
+    </section>
+	<section id="subtitle">
+        <div class="wrapper">
+            <div class="welcome" style="text-align: center; font-family: Consolas,serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                <h3>Buğra Şimşek Onur Demirel Ali Kemal Tamkoç Behiç Kılınçkaya</h3>
+				<h4>2220356187 2220356189 2200356856 2220356192</h4>
             </div>
         </div>
     </section>
@@ -58,18 +66,20 @@
 			<div class="explanation">
 				<div class="explanation_wrapper">
 					<div class="left-column">
-                        <p><strong>Dataset:</strong> This is the starting point of the process and likely refers to a collection of patent documents that need to be searched. The dataset is represented as a 'Document'.</p>
-                        <p><strong>Translate API:</strong> The patent documents in the dataset are passed through a translation API. This step suggests that the documents may be in different languages, and the API standardizes them into a single language to simplify processing.</p>
-                        <p><strong>Sentence Transformer:</strong> The translated documents are processed by a sentence transformer. This machine learning model is designed to convert sentences into vector representations.</p>
-                        <p><strong>Vectorized Content:</strong> The output from the sentence transformer is a vectorized representation of each document in the dataset. These vectors are ready for comparison and search operations.</p>
-                        <p><strong>Query:</strong> This is the input from a user who is searching for specific information within the patent dataset. The query is represented as 'Data (I/O)'.</p>
+						<h4 style="font-family: Consolas,serif"><strong>Problem Introduction</strong></h4>
+                        <p style="font-family: Consolas,serif">Introducing our cutting-edge Artificial Intelligence Based Patent Search System, designed to revolutionize the way researchers and innovators navigate the ever-expanding landscape of patents. With record-breaking numbers of patent applications filed worldwide each year, efficiently searching through this vast resource has become a critical challenge. Our system leverages state-of-the-art natural language processing and information retrieval techniques, specifically tailored for the complex language used in patents. By utilizing a domain-specific language model, PatentSBERTa, our system outperforms traditional methods and delivers highly accurate and relevant search results. Experience the future of patent search with our AI-driven solution, saving you time and effort in your research and innovation process.</p>
+<!--                        <p><strong>Translate API:</strong> The patent documents in the dataset are passed through a translation API. This step suggests that the documents may be in different languages, and the API standardizes them into a single language to simplify processing.</p>-->
+<!--                        <p><strong>Sentence Transformer:</strong> The translated documents are processed by a sentence transformer. This machine learning model is designed to convert sentences into vector representations.</p>-->
+<!--                        <p><strong>Vectorized Content:</strong> The output from the sentence transformer is a vectorized representation of each document in the dataset. These vectors are ready for comparison and search operations.</p>-->
+<!--                        <p><strong>Query:</strong> This is the input from a user who is searching for specific information within the patent dataset. The query is represented as 'Data (I/O)'.</p>-->
                     </div>
                     <div class="right-column">
-                        <p><strong>Sentence Transformer (again):</strong> The user's query is also processed by the same sentence transformer used for the dataset. This ensures that the query is converted into a vector form that is compatible with the vectorized content of the dataset.</p>
-                        <p><strong>Vectorized Query:</strong> The transformed query becomes a vectorized form, which can now be compared directly against the vectorized content of the dataset.</p>
-                        <p><strong>Elasticsearch:</strong> This is a search engine that facilitates the searching of documents. It likely uses the vectorized query to search through the vectorized content.</p>
-                        <p><strong>KNN with Cosine Similarity:</strong> This step indicates the use of a k-nearest neighbors (KNN) algorithm combined with cosine similarity to find the most relevant patent documents.</p>
-                        <p><strong>Related Results:</strong> The final output of the process is the related results that are returned to the user based on the query. These results are likely ranked by their relevance to the query, determined by the cosine similarity scores.</p>
+						<h4 style="font-family: Consolas,serif"><strong>Solution Methodology</strong></h4>
+                        <p style="font-family: Consolas,serif">Our Artificial Intelligence Based Patent Search System employs a sophisticated approach to ensure the most accurate and relevant results. We begin by curating a custom dataset of patent documents, focusing on the top 100 companies in the aerospace industry. The text data undergoes rigorous pre-processing, including translation to English, removal of incomplete patents, and cleaning of irrelevant characters and figures. We then employ PatentSBERTa, a transformer model specifically trained on patent data, to convert the text into high-dimensional vector representations. These vectors capture the semantic meaning and relationships between concepts within the patents using attention mechanisms. ElasticSearch, a powerful vector database, enables efficient vector-based search, while a KNN (k-Nearest Neighbors) algorithm with cosine similarity is used to retrieve the most relevant patents. This technical foundation allows our system to excel at handling real-world queries, synthetic queries created by language models, and even patent research reports prepared by experts.</p>
+<!--                        <p><strong>Vectorized Query:</strong> The transformed query becomes a vectorized form, which can now be compared directly against the vectorized content of the dataset.</p>-->
+<!--                        <p><strong>Elasticsearch:</strong> This is a search engine that facilitates the searching of documents. It likely uses the vectorized query to search through the vectorized content.</p>-->
+<!--                        <p><strong>KNN with Cosine Similarity:</strong> This step indicates the use of a k-nearest neighbors (KNN) algorithm combined with cosine similarity to find the most relevant patent documents.</p>-->
+<!--                        <p><strong>Related Results:</strong> The final output of the process is the related results that are returned to the user based on the query. These results are likely ranked by their relevance to the query, determined by the cosine similarity scores.</p>-->
                     </div>
 				</div>
 			</div>
@@ -92,23 +102,27 @@
         <i class="icon-chevron-thin-left prev"></i>
         <i class="icon-chevron-thin-right next"></i>
     </section>
-    <section id="contact">
-        <div class="video-container">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/K11ZzfzWEQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+<!--    <section id="contact">-->
+<!--        <div class="video-container">-->
+<!--            <iframe width="100%" height="500" src="https://www.youtube.com/embed/K11ZzfzWEQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--        </div>-->
+<!--    </section>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <section id="code-section">
         <div class="link-container" style="text-align: center; margin-top: 20px;">
-            <a href="https://github.com/atamkoc/patent-search-frontend" target="_blank" style="display: inline-block; margin-right: 20px;">
+            <a href="https://github.com/onur-demirel/Patfinder-FrontEnd" target="_blank" style="display: inline-block; margin-right: 20px;">
                 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 150px; height: 150px;">
-                <p style="font-size: 24px; color: #333; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">View Source Code</p>
+                <p style="font-size: 24px; font-family: Consolas,serif; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">View Source Code</p>
             </a>
             <!-- PDF link with icon -->
             <a href="https://drive.google.com/file/d/1DNKAkUkCz4GyKXeydfrTq4uEhQUb_IDJ/view?usp=sharing" target="_blank" style="display: inline-block; margin-left: 20px;">
                 <i class="fas fa-file-pdf" style="font-size: 150px; color: red;"></i>
-                <p style="font-size: 24px; color: #333; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">View Project Poster</p>
+                <p style="font-size: 24px; font-family: Consolas,serif; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">View Project Poster</p>
+            </a>
+			<a href="https://drive.google.com/file/d/17AS_bNx6oHz4qzQ0ykYYb7zn6ytYJ5oN/view?usp=sharing" target="_blank" style="display: inline-block; margin-left: 20px;">
+                <i class="fas fa-file-pdf" style="font-size: 150px; color: red;"></i>
+                <p style="font-size: 24px; font-family: Consolas,serif; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">SIU 2024 Paper</p>
             </a>
         </div>
         
